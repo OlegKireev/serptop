@@ -1,0 +1,42 @@
+$container-width: 1200px;
+$side-paddings: 15px;
+$mobile-width: 768px;
+
+$color-white: #fbfef9;
+$color-black: #191923;
+$color-gray-100: #f8f9fa;
+$color-gray-200: #e9ecef;
+$color-gray-300: #dee2e6;
+$color-gray-400: #ced4da;
+$color-gray-500: #adb5bd;
+$color-gray-600: #6c757d;
+$color-gray-700: #495057;
+$color-gray-800: #343a40;
+$color-gray-900: #f8f9fa;
+$color-light-gray: #9e9e9e;
+$color-medium-gray: #606060;
+$color-dark-gray: #212529;
+$color-main: #1e1744;
+$color-alt: #bf1363;
+$color-res: #f39237;
+$color-green: #37bb0f;
+$color-red: #ee1414;
+$color-background: $color-white;
+
+$body-font-family: 'CeraPro', 'Arial', sans-serif;
+$body-font-size: 16px;
+$body-font-weight: 400;
+$body-color: $color-black;
+$body-line-height: 1.5;
+
+$heading-font-family: $body-font-family;
+$heading-line-height: 1.05;
+$heading-letter-spacing: 0;
+$h1-font-size: calc(24px + (32 - 24) * (100vw - 320px) / (1920 - 320));
+$h2-font-size: calc(22px + (28 - 22) * (100vw - 320px) / (1920 - 320));
+$h3-font-size: calc(20px + (24 - 20) * (100vw - 320px) / (1920 - 320));
+$h4-font-size: calc(18px + (20 - 18) * (100vw - 320px) / (1920 - 320));
+$h5-font-size: calc(16px + (18 - 16) * (100vw - 320px) / (1920 - 320));
+$h6-font-size: 16px;
+
+$button-border-radius: 0.3125em; // = 5px при 16px

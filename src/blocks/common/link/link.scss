@@ -1,0 +1,61 @@
+.link {
+  color: $color-medium-gray;
+
+  &:hover {
+    color: $color-dark-gray;
+  }
+
+  &:active {
+    color: $color-dark-gray;
+  }
+
+  &--main {
+    color: $color-main;
+    &:hover,
+    &:focus-visible {
+      color: lighten($color-red, $amount: 15%);
+    }
+
+    &:active {
+      color: darken($color-main, $amount: 10%);
+    }
+  }
+
+  &--alt {
+    color: $color-alt;
+    &:hover {
+      color: lighten($color-alt, $amount: 15%);
+    }
+
+    &:active {
+      color: darken($color-alt, $amount: 10%);
+    }
+  }
+
+  &--res {
+    color: $color-res;
+
+    &:hover {
+      color: lighten($color-res, $amount: 15%);
+    }
+
+    &:active {
+      color: darken($color-res, $amount: 10%);
+    }
+  }
+
+  &.disabled {
+    cursor: default;
+    color: $color-light-gray;
+
+    &:hover {
+      background-color: initial;
+      color: $color-light-gray;
+    }
+
+    &:active {
+      background-color: initial;
+      color: $color-light-gray;
+    }
+  }
+}

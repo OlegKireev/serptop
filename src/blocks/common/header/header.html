@@ -1,0 +1,19 @@
+@include('./../header-top/header-top.html')
+<header class="header">
+  <div class="header__container container">
+    <a>
+      <svg class="header__logo" width="79" height="71">
+        <use xlink:href="./img/sprite.svg#logo"></use>
+      </svg>
+    </a>
+    @include('./../menu/menu.html')
+    <div class="header__actions">
+      <a class="header__phone-link btn btn--alt" href="#">
+        <svg class="header__phone-link-icon" width="17" height="17">
+          <use xlink:href="./img/sprite.svg#phone"></use>
+        </svg>
+      </a>
+      <a class="header__link btn btn--main" data-da="header__container,1,768">Подать заявку</a>
+    </div>
+  </div>
+</header>

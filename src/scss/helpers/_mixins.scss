@@ -1,0 +1,22 @@
+// Использование @include font-face('Название шрифта', 'Имя файла без расширения и пути', 'Жирность шрифта')
+@mixin font-face($font-family, $filename, $weight) {
+    @font-face {
+        font-family: "#{$font-family}";
+        src: url("../fonts/#{$filename}.woff2") format("woff2"),
+            url("../fonts/#{$filename}.woff") format("woff");
+        font-weight: #{$weight};
+        font-display: swap;
+        font-style: normal;
+    }
+}
+
+@mixin visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

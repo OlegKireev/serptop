@@ -1,0 +1,46 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    margin-right: 2rem;
+
+    @media screen and (max-width: 991px) {
+      width: 50px;
+      height: 45px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__phone-link {
+    margin-right: 20px;
+  }
+
+  &__link {
+    white-space: nowrap;
+  }
+}

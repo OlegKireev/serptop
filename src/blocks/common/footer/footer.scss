@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $color-main;
+
+  &__link {
+    color: $color-gray-400;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-gray-500;
+    }
+
+    &:active {
+      color: $color-gray-600;
+    }
+  }
+}

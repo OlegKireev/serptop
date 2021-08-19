@@ -1,0 +1,11 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+
+  &__slide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+}

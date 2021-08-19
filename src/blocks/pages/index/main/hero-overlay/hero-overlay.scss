@@ -1,0 +1,148 @@
+.hero-overlay {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: grid;
+  grid-template: fit-content(250px) fit-content(100px) / repeat(8, 1fr);
+  transform: translateX(-50%);
+
+  @media screen and (max-width: 767px) {
+    grid-template: fit-content(250px) fit-content(100px) fit-content(100px) / repeat(8, 1fr);
+  }
+
+  &__slider-info {
+    position: relative;
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    background-color: #fff;
+    padding: 2.5vw 2.5vw 7.5vw;
+
+    @media screen and (max-width: 767px) {
+      grid-column: 1 / 9;
+      padding: 16px;
+    }
+  }
+
+  &__desc {
+    color: $color-main;
+    font-weight: 300;
+    font-size: calc(24px + (38 - 24) * (100vw - 320px) / (1920 - 320));
+    line-height: 1.25;
+    letter-spacing: -2px;
+  }
+
+  &__slider-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vw;
+  }
+
+  &__slider-btn {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    border-radius: 50%;
+    border: 1px solid #bdbbc9;
+    background: $color-white;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-gray-200;
+    }
+
+    &:active {
+      background-color: $color-gray-400;
+    }
+
+    &.prev {
+      & svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:after {
+      content: '';
+    }
+  }
+
+  &__slider-pagination {
+    position: static;
+    width: auto;
+    margin: 0 25px;
+
+    & .swiper-pagination-current {
+      font-weight: 700;
+      font-size: 28px;
+    }
+  }
+
+  &__list {
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+
+    @media screen and (max-width: 767px) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__topic {
+    grid-row: 2 / 3;
+    grid-column: 5 / 9;
+
+    @media screen and (max-width: 767px) {
+      grid-row: 3 / 4;
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__videos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+
+    @media screen and (max-width: 1199px) {
+      left: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      bottom: 100%;
+      left: 0;
+    }
+  }
+
+  &__video:first-child a {
+    background-color: $color-main;
+  }
+
+  &__video-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 82px;
+    height: 77px;
+    padding: 10px 14px 12px;
+
+    &:hover,
+    &:focus-visible {
+      & svg {
+        fill: $color-red;
+      }
+    }
+
+    &:active {
+      & svg {
+        fill: darken($color: $color-red, $amount: 10%);
+      }
+    }
+  }
+
+  &__video-icon {
+    fill: $color-white;
+  }
+}

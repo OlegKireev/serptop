@@ -1,0 +1,57 @@
+.hero-articles {
+  display: flex;
+
+  &__item {
+    overflow: hidden;
+    flex-grow: 1;
+
+    @media screen and (max-width: 767px) {
+      width: 50%;
+    }
+
+    &:nth-child(1) {
+      & a {
+        color: $color-white;
+        background-color: $color-red;
+
+        &:hover,
+        &:focus-visible {
+          background-image: linear-gradient(to bottom, rgba($color-red, 0.8), rgba($color-red, 0.8) 100%),
+            url('../../../../../../img/upload/slide-03.jpg');
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      & a {
+        background-color: $color-main;
+        color: $color-white;
+
+        &:hover,
+        &:focus-visible {
+          background-image: linear-gradient(to bottom, rgba($color-main, 0.9), rgba($color-main, 0.9) 100%),
+            url('../../../../../../img/upload/slide-04.jpg');
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+    font-weight: 500;
+    font-size: calc(16px + (27 - 16) * (100vw - 320px) / (1920 - 320));
+    transition: 0.2s background-image ease;
+    background-size: 0;
+
+    &:hover,
+    &:focus-visible {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

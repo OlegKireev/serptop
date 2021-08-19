@@ -1,0 +1,13 @@
+.text {
+    &--main {
+        color: $color-main;
+    }
+
+    &--alt {
+        color: $color-alt;
+    }
+
+    &--res {
+        color: $color-res;
+    }
+}

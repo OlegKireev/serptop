@@ -1,0 +1,98 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  padding: 0.7em 1em;
+  font-size: $body-font-size;
+  line-height: 1;
+  text-align: center;
+  font-weight: 400;
+  color: $color-black;
+  border: 1px solid $color-medium-gray;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &--wide {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &--main {
+    background-color: $color-red;
+    color: $color-white;
+    border-color: transparent;
+    font-weight: 700;
+
+    &:hover {
+      background-color: darken($color: $color-red, $amount: 5%);
+    }
+
+    &:active {
+      background-color: darken($color: $color-red, $amount: 10%);
+    }
+  }
+
+  &--alt {
+    background-color: $color-white;
+    color: $color-main;
+    border-color: $color-main;
+    transition: all 0.2s ease;
+
+    & svg {
+      fill: $color-main;
+      transition: fill 0.2s ease;
+    }
+    &:hover,
+    &:focus-visible {
+      & svg {
+        fill: $color-red;
+      }
+    }
+
+    &:active {
+      background-color: $color-gray-200;
+      border-color: $color-red;
+    }
+  }
+
+  &--res {
+    background-color: $color-res;
+    border-color: transparent;
+
+    &:hover {
+      background-color: darken($color: $color-res, $amount: 5%);
+    }
+
+    &:active {
+      background-color: darken($color: $color-res, $amount: 10%);
+    }
+  }
+
+  &--transparent {
+    border: none;
+    background-color: transparent;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-gray-200;
+    }
+
+    &:active {
+      background-color: $color-gray-300;
+    }
+  }
+
+  &.disabled {
+    cursor: default;
+    color: $color-light-gray;
+    border-color: $color-light-gray;
+
+    &:hover {
+      background-color: initial;
+    }
+
+    &:active {
+      background-color: initial;
+    }
+  }
+}

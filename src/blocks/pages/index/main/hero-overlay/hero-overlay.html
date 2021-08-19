@@ -1,0 +1,55 @@
+<div class="hero__overlay hero-overlay container">
+  <div class="hero-overlay__slider-info">
+    <div class="hero-overlay__slider-controls">
+      <button class="hero-overlay__slider-btn swiper-button-prev prev">
+        <svg class="hero-overlay__slider-btn-icon" width="40" height="20">
+          <use xlink:href="./img/sprite.svg#arrow-right"></use>
+        </svg>
+      </button>
+      <div class="hero-overlay__slider-pagination swiper-pagination"></div>
+      <button class="hero-overlay__slider-btn swiper-button-next next">
+        <svg class="hero-overlay__slider-btn-icon" width="40" height="20">
+          <use xlink:href="./img/sprite.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="hero__slider swiper-container">
+      <div class="hero__slider-list swiper-wrapper">
+        <div class="swiper-slide">
+          <p class="hero-overlay__desc">Помогаем бизнесу выходить из сложных ситуация и упреждать их возникновение.</p>
+        </div>
+        <div class="swiper-slide">
+          <p class="hero-overlay__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, possimus?</p>
+        </div>
+        <div class="swiper-slide">
+          <p class="hero-overlay__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, odit ipsam.
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <p class="hero-overlay__desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, sit accusamus!
+          </p>
+        </div>
+        <div class="swiper-slide">
+          <p class="hero-overlay__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quod?</p>
+        </div>
+      </div>
+    </div>
+    <ul class="hero-overlay__videos">
+      <li class="hero-overlay__video">
+        <a class="hero-overlay__video-link" href="#">
+          <svg class="hero-overlay__video-icon" width="55" height="55">
+            <use xlink:href="./img/sprite.svg#play"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="hero-overlay__video">
+        <a class="hero-overlay__video-link" href="#">
+          <img src="../../../../../img/upload/Russia-1-logo.svg" />
+        </a>
+      </li>
+    </ul>
+  </div>
+  @include('./hero-articles/hero-articles.html') @include('./hero-topic/hero-topic.html')
+</div>
